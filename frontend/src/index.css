@@ -1,0 +1,50 @@
+:root {
+  --rose: #c45c7a;
+  --rose-deep: #9d3d5b;
+  --blush: #f7d6de;
+  --cream: #fff6f2;
+  --ink: #3a2a30;
+  --muted: #7a656d;
+  --paper: #fffdfb;
+  --serif: "Cormorant Garamond", Georgia, serif;
+  --sans: "Outfit", "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--sans);
+  background:
+    radial-gradient(1200px 700px at 10% -10%, #ffd9e4 0%, transparent 55%),
+    radial-gradient(900px 600px at 100% 0%, #ffe8d2 0%, transparent 50%),
+    var(--cream);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 3px;
+}
